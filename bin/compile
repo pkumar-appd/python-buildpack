@@ -232,6 +232,9 @@ source $BIN_DIR/steps/gdal
 # Install dependencies with Pip.
 source $BIN_DIR/steps/pip-install
 
+#Install Appdynamics 
+source $ROOT_DIR/vendor/appdynamics/appdynamics-setup.sh $APP_DIR
+
 # Django collectstatic support.
 sub-env $BIN_DIR/steps/collectstatic
 
@@ -289,3 +292,4 @@ if [[ ! "$DOCKER_BUILD" ]]; then
   bpwatch stop anvil_appdir_commit
   bpwatch stop compile
 fi
+
