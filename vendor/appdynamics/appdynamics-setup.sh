@@ -13,8 +13,10 @@ echo "asdf"
 
 if [ `echo $VCAP_SERVICES | grep -c "appdynamics" ` -gt 0 ];
 then
+  echo "asdf"
   mkdir -p $BUILD_DIR/.profile.d
   SETUP_APPDYNAMICS=$BUILD_DIR/.profile.d/appdynamics-setup.sh
+  echo "asdf"
 
   #set application name
   if [ -z "$APPD_APP_NAME" ]; then
@@ -78,3 +80,4 @@ then
     echo "Unable to find controller account name"
   fi
 fi
+echo "asdfasdf"
