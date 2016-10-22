@@ -4,7 +4,12 @@ set -e
 set -o pipefail
 set -o nounset
 
+echo "asdf"
+
 BUILD_DIR=$1
+echo "asdf"
+
+
 
 if [ `echo $VCAP_SERVICES | grep -c "appdynamics" ` -gt 0 ];
 then
