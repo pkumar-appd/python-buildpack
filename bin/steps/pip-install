@@ -1,5 +1,6 @@
 # Install dependencies with Pip.
 
+pip install pip==8.1.1
 puts-cmd "pip install -r requirements.txt"
 
 [ ! ${FRESH_PYTHON:-} ] && bpwatch start pip_install
